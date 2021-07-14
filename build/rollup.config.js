@@ -3,6 +3,7 @@ import css from 'rollup-plugin-css-only'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import esbuild from 'rollup-plugin-esbuild'
 import path from 'path'
+import serve from 'rollup-plugin-serve'
 import { getPackagesSync } from '@lerna/project'
 import pkg from '../package.json'
 
@@ -53,6 +54,12 @@ export default inputs.map(name => ({
     }),
     nodeResolve(),
     esbuild(),
+    serve({
+      open: true,
+      port: 3008,
+      // 设置 exmaple的访问目录和dist的访问目录
+      contentBase: [resolve('../examples/dev'), resolve('../lib')],
+    }),
   ],
   external(id) {
     return /^vue/.test(id)
