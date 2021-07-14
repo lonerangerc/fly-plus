@@ -1,12 +1,12 @@
 @use "sass:math";
 
-@import "mixins/mixins";
-@import "mixins/utils";
-@import "common/var";
-@import "input";
-@import "button";
-@import "checkbox";
-@import "checkbox-group";
+@import 'mixins/mixins';
+@import 'mixins/utils';
+@import 'common/var';
+@import 'input';
+@import 'button';
+@import 'checkbox';
+@import 'checkbox-group';
 
 @include b(transfer) {
   font-size: $--font-size-base;
@@ -26,11 +26,12 @@
       margin: 0;
     }
 
-    i, span {
+    i,
+    span {
       font-size: 14px;
     }
 
-    & [class*="#{$namespace}-icon-"] + span {
+    & [class*='#{$namespace}-icon-'] + span {
       margin-left: 0;
     }
   }
@@ -170,7 +171,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: $--index-normal;
+    z-index: var(--el-index-normal);
     @include utils-vertical-center;
 
     .#{$namespace}-checkbox {

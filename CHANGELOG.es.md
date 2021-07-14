@@ -1,5 +1,47 @@
 ## Changelog
 
+### 1.0.2-beta.55
+
+*2021-07-09*
+
+### Bug fixes
+
+- Refactor the type definition of breadcrumb (#2443)
+- Add use-timeout hook (#2439)
+- Fix menu missing styles (#2423) (#2444)
+- Fix table selectable callback index incorrect issue (#2393)
+- Fix isScroll Utils (#2433)
+- Fix scrollbar add always show props and control scrollbar methods
+- Add use-model-toggle hook
+- Add use-transition-fallthrough-hook
+- Fix duplicate cell-contextmenu (#2426)
+- Add use-teleport hook (#2421)
+- Add descriptions new feature for customized style (#2358)
+- Fix warning in console when cell-contextmenu triggered (#2404)
+- Fix table add cell-contextmenu emit event (#2074)
+- Fix table-column rendered other component in hidden-columns (#2401)
+- Add event type definition
+- Fix menu hover color not change when background is changed (#2417)
+- Fix table empty data render bug
+- Fix form label-width supports number type (#2396)
+- Fix code space style (#2411)
+
+### 1.0.2-beta.54
+
+*2021-07-02*
+
+### Bug fixes
+
+- Fix select_v2 asynchronous binding issue (#2368)
+- Fix add resize directive (#2167)
+- Fix checkbox label auto convert to bool when label is empty (#2287)
+- Fix update peerDependencies vue version (#2352)
+- Fix virtual-list template string to render function (#2388)
+- Fix  code space (#2376)
+- Fix cascader arrow position (#2356)
+- Fix carousel not working when using v-show (#2361)
+- Revert fix scrollbar update when slot changed (#2322)
+
 ### 1.0.2-beta.53
 
 *2021-06-25*
